@@ -1,0 +1,1 @@
+$(document).ready(function(){var wHeight=$(window).height();$('.loadlayout').css('min-height',wHeight);document.querySelector('[title="Hosted on free web hosting 000webhost.com. Host your own website for FREE."]').style.display="none";});

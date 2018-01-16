@@ -1,0 +1,3 @@
+(function($){$.fn.relativeMousePosition=function(event,origin,fn){return this.each(function(){var widthPx=$(this).outerWidth();var heightPx=$(this).outerHeight();var offsetTopPx=$(this).offset().top;var offsetLeftPx=$(this).offset().left;var relativeMousePositionX=(event.pageX- offsetLeftPx)/ widthPx * 100;
+var relativeMousePositionY=(event.pageY- offsetTopPx)/ heightPx * 100;
+origin=="topLeft"&&fn(relativeMousePositionX,relativeMousePositionY,this);origin=="center"&&fn(relativeMousePositionX- 50,relativeMousePositionY- 50,this);});};})(jQuery);
